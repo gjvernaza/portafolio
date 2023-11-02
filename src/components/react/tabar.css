@@ -1,0 +1,53 @@
+.about-tab {
+    margin-top: 20px;
+
+}
+
+
+.about-tab ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-tab-li {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    list-style: none;
+    padding: 10px 20px;
+
+}
+
+.about-tab-li-hover {
+    color: rgb(122, 122, 223);
+    background-color: black;
+    cursor: pointer;
+    border-radius: 10px;
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.about-tab ul li:hover {
+    color: rgb(122, 122, 223);
+    background-color: black;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+
+.content {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.about-tab-link a {
+    color: white;
+}
+
+.about-tab-link a:hover {
+    color: rgb(122, 122, 223);;
+}

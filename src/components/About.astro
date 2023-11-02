@@ -1,0 +1,69 @@
+---
+import Tabar from "../components/react/Tabar";
+---
+
+<section id="about">
+    <div class="about-container-separate">
+        <div class="about-separate"></div>
+        <div class="about-avatar">
+            <img src="/src/images/foto.png" />
+        </div>
+    </div>
+    <div class="about-container-text">
+        <h1>About Me</h1>
+        <h3>
+            Soy un Ingeniero en Mecatrónica, mi formación me permite entender y
+            conectar los mundos de la mecánica, la electrónica y la informática,
+            mientras que mis habilidades de programación me permiten crear
+            software eficiente para controlar estos sistemas. Siempre busco
+            oportunidades para aplicar mis habilidades técnicas y creativas para
+            resolver problemas complejos y hacer realidad las ideas innovadoras.
+        </h3>
+        <Tabar client:visible />
+    </div>
+</section>
+
+<style>
+    #about {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .about-container-separate {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .about-separate {
+        width: 2px;
+        height: 500px;
+        background-color: white;
+        position: relative;
+        z-index: 1;
+        right: -100px;
+    }
+    .about-avatar {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        background-color: white;
+        position: relative;
+        z-index: 2;
+    }
+    .about-avatar img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 100%;
+    }
+    .about-container-text {
+        text-align: justify;
+        width: 500px;
+        height: 500px;
+    }
+</style>

@@ -1,0 +1,65 @@
+---
+import CustomForm from "./CustomForm.astro";
+import Links from "./react/Links";
+---
+
+<section id="contact">
+    <div class="contacto-container">
+        <div class="contacto-container-text">
+            <h1>Get In Touch</h1>
+            <h3>Déjame un mensaje :)</h3>
+            <div class="contacto-container-ubication">
+                <img src="/src/images/gmail.png" />
+                <h4>gjvernaza@gmail.com</h4>
+            </div>
+            <div class="contacto-container-ubication">
+                <img src="/src/images/mapa.png" />
+                <h4>Esmeraldas - Ecuador</h4>
+            </div>
+            <div class="contacto-container-links">
+                <a href="https://github.com/gjvernaza" target="_blank"
+                    ><img src="/src/images/github-lg.png" /></a
+                >
+                <a
+                    href="https://www.linkedin.com/in/geordy-jahir-030937191/"
+                    target="_blank"><img src="/src/images/linkedin.png" /></a
+                >
+            </div>
+        </div>
+        <CustomForm />
+    </div>
+</section>
+<style>
+    .contacto-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .contacto-container-ubication {
+        display: flex;
+        align-items: center;
+    }
+    .contacto-container img {
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+    }
+    .contacto-container img {
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+    }
+
+    .contacto-container-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacto-container-links img:hover {
+        cursor: pointer;
+        width: 45px;
+        height: 45px;
+    }
+</style>

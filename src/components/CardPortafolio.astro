@@ -1,0 +1,79 @@
+---
+const { img, title, text, logos } = Astro.props;
+---
+
+<div class="card-portafolio">
+    <div class="card-portafolio-img">
+        <img src={"/src/images/" + img} />
+    </div>
+    <div class="card-portafolio-fondo">
+        <h3>{title}</h3>
+        <div class="card-portafolio-link">
+            <p>
+                {text}
+            </p>
+            <div class="card-portafolio-logos">
+                <img src="src/images/github-color.png" />
+                <img src="src/images/enlace-roto.png" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card-portafolio {
+        justify-content: space-around;
+        height: 450px;
+        margin: 10px;
+    }
+    .card-portafolio-fondo {
+        width: 300px;
+        height: 450px;
+        border-radius: 20px;
+        background-color: #1e273f;
+        position: relative;
+        z-index: 1;
+        top: -200px;
+    }
+    .card-portafolio-fondo h3 {
+        padding-top: 200px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        text-align: center;
+    }
+    .card-portafolio-img {
+        background-color: white;
+        width: 300px;
+        height: 200px;
+        border-radius: 20px;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+    }
+    .card-portafolio-img img {
+        max-width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+    .card-portafolio-link {
+        text-align: justify;
+        padding: 10px;
+    }
+    .card-portafolio-link p {
+        margin: 0px;
+    }
+    .card-portafolio-link img {
+        width: 40px;
+        height: 40px;
+    }
+    .card-portafolio-link img:hover {
+        background-color: rgb(8, 24, 53);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .card-portafolio-logos {
+        display: flex;
+        justify-content: space-evenly;
+    }
+</style>

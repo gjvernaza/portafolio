@@ -1,0 +1,57 @@
+<section id="home">
+    <div class="home-container-text">
+        <h1>Hello I'm Jahir</h1>
+        <h3>
+            Soy un Ingeniero y un programador, especializado en el diseño,
+            desarrollo e implementación de soluciones mecatrónicas innovadoras.
+        </h3>
+        <div class="box-button">
+            <a href="/src/assets/cv.pdf" download="cv.pdf"
+                ><button class="button-cv">Descargar CV</button></a
+            >
+        </div>
+    </div>
+    <div class="home-container-image">
+        <img src="/src/images/avatar-foto.png" />
+    </div>
+</section>
+
+<style>
+    #home {
+        display: flex;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        justify-content: space-around;
+    }
+    .home-container-text {
+        font-weight: bold;
+        width: 500px;
+        text-align: justify;
+        margin-right: 20px;
+    }
+    .home-container-text h1 {
+        font-size: 50px;
+    }
+    .home-container-image img {
+        height: 300px;
+        background-color: rgb(53, 63, 85);
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+    .box-button {
+        justify-content: center;
+        display: flex;
+        margin-top: 50px;
+    }
+    .button-cv {
+        background-color: blueviolet;
+        padding: 10px 20px;
+        border-width: 0;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+    .button-cv:hover {
+        background-color: black;
+        cursor: pointer;
+    }
+</style>

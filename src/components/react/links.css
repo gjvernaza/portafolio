@@ -1,0 +1,16 @@
+.contacto-container img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.contacto-container-links {
+    display: flex;
+    justify-content: center;
+}
+
+.contacto-container-links img:hover {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+}
