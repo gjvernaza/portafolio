@@ -6,9 +6,13 @@ import { useState } from 'react'
 
 
 
+
 export default function Header() {
 
-    const [isOpen, setisOpen] = useState(false)
+    const [isOpen, setisOpen] = useState(false);
+    //let ancho = window.innerWidth;
+    //let alto = window.innerHeight;
+    let count = 0;
 
     function handleClick(value) {
         setisOpen(!value)
@@ -19,26 +23,24 @@ export default function Header() {
 
     if (isOpen) {
         clase = "nav-container-movil";
+
     } else {
         clase = "nav-container";
+
     }
+
 
     return (
 
         <header>
             <nav>
                 <div className="nav">
-                    <h1>PORTAFOLIO</h1>
-                    
-                        <Nav cls="nav-container"/>
-                    
+                    <h5 className="font-bold text-4xl">PORTAFOLIO</h5>
 
-                    <div className="nav-menu-icon">
-                        <a onClick={() => handleClick(isOpen)}>
+                    <Nav cls="nav-container" />
+                    <Button isOpen={isOpen} onClick={() => handleClick(isOpen)} ></Button>
 
-                            <Button value={isOpen}></Button>
-                        </a>
-                    </div>
+
                 </div>
                 {
                     isOpen ? <Nav cls={clase} /> : null

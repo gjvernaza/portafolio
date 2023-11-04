@@ -3,18 +3,35 @@ import CardPortafolio from "./CardPortafolio.astro";
 
 const desciption_1 =
     "App móvil que permine monitorear y controlar un brazo robótico implementado con ESP32 y sensores mioeléctricos.";
-const desciption_2 = "App móvil y web que permine monitorear y controlar una banda transportadora con una red de sensores inalámbricos.";
+const desciption_2 =
+    "App móvil y web que permine monitorear y controlar una banda transportadora con una red de sensores inalámbricos.";
 const desciption_3 =
     "App móvil que permine monitorear y controlar un brazo robótico implementado con ESP32 y sensores mioeléctricos.";
 ---
 
 <section>
-    <h2>Mis Proyectos</h2>
-    <div id="portfolio">
-        <CardPortafolio img="mano.png" title="MioHand 4.0" text={desciption_1} />
-        <CardPortafolio img="clasificadora.png" title="Sensors" text={desciption_2} />
-        <CardPortafolio img="clasificadora.png" title="Sensors" text={desciption_3} />
-        <CardPortafolio img="clasificadora.png" title="Sensors" text={desciption_1} />
+    <h2 class="font-bold text-2xl">Mis Proyectos</h2>
+    <div id="portfolio" class="font-bold text-xl">
+        <CardPortafolio
+            img="mano.png"
+            title="MioHand 4.0"
+            text={desciption_1}
+        />
+        <CardPortafolio
+            img="clasificadora.png"
+            title="Sensors"
+            text={desciption_2}
+        />
+        <CardPortafolio
+            img="clasificadora.png"
+            title="Sensors"
+            text={desciption_3}
+        />
+        <CardPortafolio
+            img="clasificadora.png"
+            title="Sensors"
+            text={desciption_1}
+        />
     </div>
 </section>
 

@@ -1,24 +1,8 @@
 .nav {
     display: flex;
     justify-content: space-between;
-}
-
-
-.nav-menu-icon {
-    display: none;
-
     align-items: center;
-}
-
-
-
-@media only screen and (max-width: 640px) {
-    .nav-menu-icon {
-        display: flex;
-    }
-
-    .nav-menu-icon img:hover {
-        cursor: pointer;
-    }
-
+    padding: 30px;
+    transition: all .5s;
+    transform-origin: left;
 }

@@ -8,15 +8,20 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Portafolio">
 	<main>
-		<Home />
-		<About />
-		<Portafolio />
-		<Contacto/>
+		<div class="main">
+			<Home />
+			<About />
+			<Portafolio />
+			<Contacto />
+		</div>
 	</main>
+	<style>
+			
+		
+		.main {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	</style>
 </Layout>
-<style>
-	main {
-		display: inline;
-		justify-content: center;
-	}
-</style>

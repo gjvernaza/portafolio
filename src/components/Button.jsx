@@ -1,17 +1,16 @@
 import "./Button.css"
-import { useState } from "react";
 
-export default function Button({ value }) {
+export default function Button({ isOpen, onClick }) {
 
     return (
 
-        <div class={value ? "inactive" : "active"}>
-            <button >
-                <div></div>
-                <div></div>
-                <div></div>
-            </button>
-        </div>
+
+        <button className={isOpen? "active" : "inactive"} onClick={onClick}>
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+
 
 
     );
