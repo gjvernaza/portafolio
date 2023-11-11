@@ -1,4 +1,4 @@
-.active {
+.btn-active {
     display: flex;
 
     justify-content: center;
@@ -15,7 +15,7 @@
 
 
 
-.active div {
+.btn-active div {
     background-color: white;
     height: 2px;
     width: 100%;
@@ -24,32 +24,32 @@
     transform-origin: left;
 }
 
-.active div:first-child {
+.btn-active div:first-child {
     transform: rotate(45deg);
 }
 
-.active div:nth-child(2) {
+.btn-active div:nth-child(2) {
     opacity: 0;
 }
 
-.active div:last-child {
+.btn-active div:last-child {
     transform: rotate(-45deg);
 }
 
-.inactive {
+.btn-inactive {
     display: none;
 }
 
 
-@media only screen and (min-width: 640px) {
-    .active {
+@media only screen and (min-width: 700px) {
+    .btn-active {
         display: none;
     }
 }
 
 
-@media only screen and (max-width: 640px) {
-    .inactive {
+@media only screen and (max-width: 700px) {
+    .btn-inactive {
         display: flex;
 
         justify-content: center;
@@ -63,7 +63,7 @@
         cursor: pointer;
     }
 
-    .inactive div {
+    .btn-inactive div {
         background-color: white;
         height: 2px;
         width: 100%;

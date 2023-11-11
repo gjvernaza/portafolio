@@ -9,7 +9,7 @@ export default function Tabar() {
     }
 
     return (
-        <>
+        <div>
             <div className="about-tab">
                 <ul>
                     <li className={tab == 0 ? "about-tab-li-hover" : "about-tab-li"} onClick={() => { handleClick(0) }}>Skills</li>
@@ -27,7 +27,7 @@ export default function Tabar() {
                     <li>Programación en Matlab</li>
                     <li>Arduino y ESP32</li>
                     <li>Desarrollo Móvil con Flutter y aplicaciones para IoT</li>
-                    <li>HTML, CSS, JAVASCRIPT</li>
+                    <li>HTML, CSS, JavaScript</li>
 
                 </ul>
             </div>
@@ -59,7 +59,7 @@ export default function Tabar() {
                 </ul>
             </div>
 
-        </>
+        </div>
 
     );
 
